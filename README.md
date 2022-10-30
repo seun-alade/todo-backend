@@ -8,7 +8,7 @@ To make sure you have them available on your machine,
 try running the following command.
 
 ```sh
-$ npm -v && node -v
+npm -v && node -v
 6.4.1
 v8.16.0
 ```
@@ -20,20 +20,12 @@ v8.16.0
 Start with cloning this repo on your local machine:
 
 ```sh
-$ git clone https://github.com/Zeeohn/MERN-todo-1.git
-$ cd MERN-todo-1
+git clone https://github.com/slimprepdevops/react-todo-server-01.git
+cd MERN-todo-1
 ```
 
 To install and set up the libraries, run:
 
 ```sh
-$ npm install
+npm install
 ```
-
-### `nodemon index.js`
-
-Runs the server in the development mode.\
-Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
