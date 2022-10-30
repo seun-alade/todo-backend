@@ -21,7 +21,7 @@ Start with cloning this repo on your local machine:
 
 ```sh
 git clone https://github.com/slimprepdevops/react-todo-server-01.git
-cd MERN-todo-1
+cd react-todo-server-01
 ```
 
 To install and set up the libraries, run:
