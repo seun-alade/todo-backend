@@ -9,8 +9,8 @@ try running the following command.
 
 ```sh
 npm -v && node -v
-6.4.1
-v8.16.0
+8.19.4
+v16.20.2
 ```
 
 ## Installation
