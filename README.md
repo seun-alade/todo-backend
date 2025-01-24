@@ -1,31 +1,42 @@
-# Getting Started with the Server side of the MERN todo app
+# Getting Started with the Server side of the Node Docker todo app
 
 ## Prerequisites
+Ensure that you have Docker installed 
+visit docker official documentation to install
 
-This project requires NodeJS (version 8 or later) and NPM.
-[Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
-To make sure you have them available on your machine,
-try running the following command.
-
+- check that docker is installed
 ```sh
+
 npm -v && node -v
 8.19.4
 v16.20.2
+
+docker --version
+
+
+- you might want to install mongo-db first by running the shell script. 
+you can achieve this by running the `mongo-db.sh` file, ensure to update the credentials in the file before proceeding.
+```sh
+sudo chmod 777 mongo-db.sh
 ```
 
-## Installation
-
-**BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
-
-Start with cloning this repo on your local machine:
-
 ```sh
-git clone https://github.com/slimprepdevops/react-todo-server-01.git
-cd react-todo-server-01
+./mongo-db.sh
+```
+this will install mongodb and run the database as a container, 
+
+- ensure to setup the `.env` file
+```sh
+cp .env.example .env
+```
+edit the connection string to match the credentials on the `mongo-db.sh` file
+
+- build image using the Dockerfile
+```sh
+docker build -t backend-node .
 ```
 
-To install and set up the libraries, run:
-
+- rum the built image using CLI
 ```sh
-npm install
+docker run --name backend-node -d -p 5000:5000 backend-node
 ```
