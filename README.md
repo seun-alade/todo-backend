@@ -6,8 +6,17 @@ visit docker official documentation to install
 
 - check that docker is installed
 ```sh
+<<<<<<< HEAD
 docker --version
 ```
+=======
+
+npm -v && node -v
+8.19.4
+v16.20.2
+
+docker --version
+>>>>>>> 384cbe0785a11db472b74c4f0b4def76da466ae7
 
 
 - you might want to install mongo-db first by running the shell script. 
