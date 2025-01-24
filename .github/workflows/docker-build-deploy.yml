@@ -1,7 +1,7 @@
 name: Build, Push, and Deploy Backend
 
 on:
-  push
+  push:
     branches:
       - main
 
